@@ -28,7 +28,6 @@ const NoteApp = () => {
 
   return (
     <section className="min-h-screen bg-linear-to-br from-slate-900 to-slate-700 flex flex-col lg:flex-row">
-      
       {/* Form Section */}
       <div className="lg:w-1/2 flex items-center justify-center p-8">
         <form
@@ -70,9 +69,7 @@ const NoteApp = () => {
       {/* Notes Section */}
       <div className="lg:w-1/2 p-8 grid grid-cols-1 sm:grid-cols-2 gap-6 overflow-y-auto max-h-screen">
         {tasks.length === 0 ? (
-          <p className="text-white text-center col-span-2">
-            No Notes Yet
-          </p>
+          <p className="text-white text-center col-span-2">No Notes Yet</p>
         ) : (
           tasks.map((task) => (
             <div
@@ -94,7 +91,6 @@ const NoteApp = () => {
           ))
         )}
       </div>
-
     </section>
   );
 };
